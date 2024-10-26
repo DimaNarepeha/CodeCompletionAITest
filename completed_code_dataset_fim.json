@@ -1,0 +1,392 @@
+[
+    {
+        "prefix": "self.accuracy(predictions_softmax, labels)",
+        "middle": "self.log('val_loss',",
+        "suffix": "loss, prog_bar=True)",
+        "model_completion": "self.accuracy_list.append(self"
+    },
+    {
+        "prefix": "torchvision from",
+        "middle": "torch",
+        "suffix": "import nn",
+        "model_completion": ".\n    \"\"\"\n    return nn.Sequential("
+    },
+    {
+        "prefix": "DataLoader(train_dataset, batch_size=self.batch_size,",
+        "middle": "shuffle=True,",
+        "suffix": "num_workers=16) return",
+        "model_completion": "shuffle=True, num_workers=16"
+    },
+    {
+        "prefix": "trainer =",
+        "middle": "L.Trainer(max_epochs=200)",
+        "suffix": "# trainer.fit(model)",
+        "model_completion": "trainer.fit(model)"
+    },
+    {
+        "prefix": "trainer.fit(model) trainer.test(model)",
+        "middle": "#",
+        "suffix": "# #",
+        "model_completion": ""
+    },
+    {
+        "prefix": "confmat =",
+        "middle": "self.conf_matrix.compute().cpu().numpy()",
+        "suffix": "# Compute",
+        "model_completion": "\"confmat.json\""
+    },
+    {
+        "prefix": "test_loader def",
+        "middle": "val_dataloader(self):",
+        "suffix": "# Set",
+        "model_completion": "_test_loader(self):\n        self."
+    },
+    {
+        "prefix": "DataLoader filepath_train",
+        "middle": "=",
+        "suffix": "\"data/train\" train_dataset",
+        "model_completion": "_dataset_path,\n        batch_size="
+    },
+    {
+        "prefix": "out_channels=32, kernel_size=3,",
+        "middle": "padding=1)",
+        "suffix": "# OUT",
+        "model_completion": "kernel_stride=1, padding=1,"
+    },
+    {
+        "prefix": "kernel_size=3, padding=1)",
+        "middle": "self.conv32_32",
+        "suffix": "= nn.Conv2d(in_channels=32,",
+        "model_completion": "self.conv2 = nn.Conv2"
+    },
+    {
+        "prefix": "]) self.conf_matrix",
+        "middle": "=",
+        "suffix": "ConfusionMatrix(task=\"multiclass\", num_classes=num_classes)",
+        "model_completion": "= conf_matrix\n        self.task = task"
+    },
+    {
+        "prefix": "images, labels",
+        "middle": "=",
+        "suffix": "next(dataiter) model",
+        "model_completion": ", batch_size=batch_size, shuffle"
+    },
+    {
+        "prefix": "the confusion",
+        "middle": "matrix",
+        "suffix": "per_class_accuracy =",
+        "model_completion": "s of the model.\n    \"\"\"\n    # Compute"
+    },
+    {
+        "prefix": "import ConfusionMatrix",
+        "middle": "from",
+        "suffix": "torchvision import",
+        "model_completion": "from"
+    },
+    {
+        "prefix": "filepath_hand_test=\"data/hand_test\" test_transform",
+        "middle": "=",
+        "suffix": "transforms.Compose([ transforms.Resize((128,",
+        "model_completion": "s=transforms.Compose([ transforms.Resize(("
+    },
+    {
+        "prefix": "PyTorch tensors",
+        "middle": "transforms.Normalize(mean=[0.485,",
+        "suffix": "0.456, 0.406],",
+        "model_completion": "s.\n\n\"\"\"\n\nimport torch"
+    },
+    {
+        "prefix": "if file.lower().endswith('.jpg')]",
+        "middle": "return",
+        "suffix": "jpg_files transform",
+        "model_completion": "for file in"
+    },
+    {
+        "prefix": "dim=1) self.conf_matrix(predictions,",
+        "middle": "labels)",
+        "suffix": "self.accuracy(predictions_softmax, labels)",
+        "model_completion": "self.label_dim)\n        return"
+    },
+    {
+        "prefix": "to 256x256",
+        "middle": "transforms.ToTensor(),",
+        "suffix": "# Convert",
+        "model_completion": ""
+    },
+    {
+        "prefix": "= np.clip(img,",
+        "middle": "0,",
+        "suffix": "1) #",
+        "model_completion": "0, 255) #"
+    },
+    {
+        "prefix": "= F.softmax(predictions,",
+        "middle": "dim=1)",
+        "suffix": "self.accuracy(predictions_softmax, labels)",
+        "model_completion": "1)\n        )\n        return"
+    },
+    {
+        "prefix": "considered 'large'.",
+        "middle": "Default",
+        "suffix": "is 1.0.",
+        "model_completion": "#"
+    },
+    {
+        "prefix": "# #",
+        "middle": "Assuming",
+        "suffix": "`val_loader` is",
+        "model_completion": "# # # # # # # # # #"
+    },
+    {
+        "prefix": "= self.pool(image)",
+        "middle": "image",
+        "suffix": "= F.leaky_relu(self.conv32_64(image))",
+        "model_completion": "image"
+    },
+    {
+        "prefix": "plt.imshow(img) plt.axis('off')",
+        "middle": "#",
+        "suffix": "Turn off",
+        "model_completion": "plt.show()\n\n\nif __name"
+    },
+    {
+        "prefix": "std=[0.229, 0.224,",
+        "middle": "0.225])",
+        "suffix": "# Normalize",
+        "model_completion": "0.225],\n                 mean=["
+    },
+    {
+        "prefix": "stride=2) #",
+        "middle": "Fully",
+        "suffix": "connected layer",
+        "model_completion": ""
+    },
+    {
+        "prefix": "shuffle=True, num_workers=16)",
+        "middle": "#",
+        "suffix": "# #",
+        "model_completion": ""
+    },
+    {
+        "prefix": "threshold=1.0) trainer",
+        "middle": "=",
+        "suffix": "L.Trainer(max_epochs=200) #",
+        "model_completion": "trainer.fit(X_train,"
+    },
+    {
+        "prefix": "now (128,",
+        "middle": "25,",
+        "suffix": "25) image",
+        "model_completion": "128) image)\n        self."
+    },
+    {
+        "prefix": "output_size_of_pooling =",
+        "middle": "3",
+        "suffix": "learning_rate =",
+        "model_completion": "100000000"
+    },
+    {
+        "prefix": "num_classes =",
+        "middle": "2",
+        "suffix": "mean =",
+        "model_completion": "10000"
+    },
+    {
+        "prefix": "accuracy from",
+        "middle": "the",
+        "suffix": "confusion matrix",
+        "model_completion": "the"
+    },
+    {
+        "prefix": "# Set",
+        "middle": "up",
+        "suffix": "and return",
+        "model_completion": "s the default value of the default_value_"
+    },
+    {
+        "prefix": "= datasets.ImageFolder(root=filepath_train,",
+        "middle": "transform=self.transform)",
+        "suffix": "train_loader =",
+        "model_completion": "shuffle=True, transform=transforms.Compose(["
+    },
+    {
+        "prefix": "test_transform =",
+        "middle": "transforms.Compose([",
+        "suffix": "transforms.Resize((128, 128)),",
+        "model_completion": "transforms.Compose([transforms.ToTensor(), transforms"
+    },
+    {
+        "prefix": "to numpy",
+        "middle": "array",
+        "suffix": "and flatten",
+        "model_completion": ""
+    },
+    {
+        "prefix": "filepath_train =",
+        "middle": "\"data/train\"",
+        "suffix": "filepath_test =",
+        "model_completion": "\"data/train.csv\"\nfilepath_"
+    },
+    {
+        "prefix": "(128, 25,",
+        "middle": "25)",
+        "suffix": "image =",
+        "model_completion": "25)\n    image = np.array"
+    },
+    {
+        "prefix": "label='All weights')",
+        "middle": "plt.hist(large_weights,",
+        "suffix": "bins=50, color='red',",
+        "model_completion": "plt.xlabel('Epochs')\n        plt"
+    },
+    {
+        "prefix": "to PyTorch",
+        "middle": "tensors",
+        "suffix": "transforms.Normalize(mean=[0.485, 0.456,",
+        "model_completion": "from torch.utils.data import Dataset"
+    },
+    {
+        "prefix": "= self(images)",
+        "middle": "loss",
+        "suffix": "= self.criterion(predictions,",
+        "model_completion": "loss"
+    },
+    {
+        "prefix": "train_loader def",
+        "middle": "test_dataloader(self):",
+        "suffix": "# Set",
+        "model_completion": "_train_loader_for_test(self"
+    },
+    {
+        "prefix": "if images_so_far",
+        "middle": "==",
+        "suffix": "num_images: return",
+        "model_completion": "ur"
+    },
+    {
+        "prefix": "PyTorch model",
+        "middle": "instance",
+        "suffix": "plot_large_weights_distribution(model, threshold=1.0)",
+        "model_completion": "model ="
+    },
+    {
+        "prefix": "0.225]) #",
+        "middle": "Normalize",
+        "suffix": "images ])",
+        "model_completion": "0.225) # 0"
+    },
+    {
+        "prefix": "confusion matrix",
+        "middle": "per_class_accuracy",
+        "suffix": "= confmat.diagonal()",
+        "model_completion": "s.\n    \"\"\"\n    confmat"
+    },
+    {
+        "prefix": "outputs =",
+        "middle": "model(images)",
+        "suffix": "_, preds",
+        "model_completion": "preds"
+    },
+    {
+        "prefix": "filepath_train =",
+        "middle": "\"data/test\"",
+        "suffix": "test_dataset =",
+        "model_completion": "os.path.join(data_dir,"
+    },
+    {
+        "prefix": "from torchmetrics",
+        "middle": "import",
+        "suffix": "ConfusionMatrix from",
+        "model_completion": "import"
+    },
+    {
+        "prefix": "# Find",
+        "middle": "large",
+        "suffix": "weights large_weights",
+        "model_completion": "the largest weight in the list\nlargest_weight"
+    },
+    {
+        "prefix": "def test_dataloader(self):",
+        "middle": "#",
+        "suffix": "Set up",
+        "model_completion": "self.dataloader = DataLoader(self.dataset"
+    },
+    {
+        "prefix": "num_images=6): model.eval()",
+        "middle": "#",
+        "suffix": "Set the",
+        "model_completion": "model."
+    },
+    {
+        "prefix": "directory files",
+        "middle": "=",
+        "suffix": "os.listdir(directory) #",
+        "model_completion": ")"
+    },
+    {
+        "prefix": "files jpg_files",
+        "middle": "=",
+        "suffix": "[file for",
+        "model_completion": ".txt\")"
+    },
+    {
+        "prefix": "num_workers=16) #",
+        "middle": "#",
+        "suffix": "# Assuming",
+        "model_completion": ""
+    },
+    {
+        "prefix": "out_channels=32, kernel_size=3,",
+        "middle": "padding=1)",
+        "suffix": "self.conv32_32 =",
+        "model_completion": "kernel_stride=1, padding=1,"
+    },
+    {
+        "prefix": "= self.pool(image)",
+        "middle": "#",
+        "suffix": "Output is",
+        "model_completion": "return"
+    },
+    {
+        "prefix": "transforms, datasets",
+        "middle": "from",
+        "suffix": "torchvision.transforms import",
+        "model_completion": ", transforms\nfrom"
+    },
+    {
+        "prefix": "as L",
+        "middle": "import",
+        "suffix": "torch import",
+        "model_completion": "abels."
+    },
+    {
+        "prefix": "with torch.no_grad():",
+        "middle": "#",
+        "suffix": "No need",
+        "model_completion": "for i in range(1000"
+    },
+    {
+        "prefix": "threshold above",
+        "middle": "which",
+        "suffix": "weights are",
+        "model_completion": "s"
+    },
+    {
+        "prefix": "transform=test_transform) val_loader",
+        "middle": "=",
+        "suffix": "DataLoader(val_dataset, batch_size=batch_size,",
+        "model_completion": ", test_loader ="
+    },
+    {
+        "prefix": "= std",
+        "middle": "*",
+        "suffix": "img +",
+        "model_completion": "_"
+    },
+    {
+        "prefix": "128)), #",
+        "middle": "Resize",
+        "suffix": "images to",
+        "model_completion": "128x128\n        ("
+    }
+]

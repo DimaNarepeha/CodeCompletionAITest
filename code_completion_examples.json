@@ -1,0 +1,327 @@
+[
+    [
+        "self.accuracy(predictions_softmax, labels)",
+        "self.log('val_loss',",
+        "loss, prog_bar=True)"
+    ],
+    [
+        "torchvision from",
+        "torch",
+        "import nn"
+    ],
+    [
+        "DataLoader(train_dataset, batch_size=self.batch_size,",
+        "shuffle=True,",
+        "num_workers=16) return"
+    ],
+    [
+        "trainer =",
+        "L.Trainer(max_epochs=200)",
+        "# trainer.fit(model)"
+    ],
+    [
+        "trainer.fit(model) trainer.test(model)",
+        "#",
+        "# #"
+    ],
+    [
+        "confmat =",
+        "self.conf_matrix.compute().cpu().numpy()",
+        "# Compute"
+    ],
+    [
+        "test_loader def",
+        "val_dataloader(self):",
+        "# Set"
+    ],
+    [
+        "DataLoader filepath_train",
+        "=",
+        "\"data/train\" train_dataset"
+    ],
+    [
+        "out_channels=32, kernel_size=3,",
+        "padding=1)",
+        "# OUT"
+    ],
+    [
+        "kernel_size=3, padding=1)",
+        "self.conv32_32",
+        "= nn.Conv2d(in_channels=32,"
+    ],
+    [
+        "]) self.conf_matrix",
+        "=",
+        "ConfusionMatrix(task=\"multiclass\", num_classes=num_classes)"
+    ],
+    [
+        "images, labels",
+        "=",
+        "next(dataiter) model"
+    ],
+    [
+        "the confusion",
+        "matrix",
+        "per_class_accuracy ="
+    ],
+    [
+        "import ConfusionMatrix",
+        "from",
+        "torchvision import"
+    ],
+    [
+        "filepath_hand_test=\"data/hand_test\" test_transform",
+        "=",
+        "transforms.Compose([ transforms.Resize((128,"
+    ],
+    [
+        "PyTorch tensors",
+        "transforms.Normalize(mean=[0.485,",
+        "0.456, 0.406],"
+    ],
+    [
+        "if file.lower().endswith('.jpg')]",
+        "return",
+        "jpg_files transform"
+    ],
+    [
+        "dim=1) self.conf_matrix(predictions,",
+        "labels)",
+        "self.accuracy(predictions_softmax, labels)"
+    ],
+    [
+        "to 256x256",
+        "transforms.ToTensor(),",
+        "# Convert"
+    ],
+    [
+        "= np.clip(img,",
+        "0,",
+        "1) #"
+    ],
+    [
+        "= F.softmax(predictions,",
+        "dim=1)",
+        "self.accuracy(predictions_softmax, labels)"
+    ],
+    [
+        "considered 'large'.",
+        "Default",
+        "is 1.0."
+    ],
+    [
+        "# #",
+        "Assuming",
+        "`val_loader` is"
+    ],
+    [
+        "= self.pool(image)",
+        "image",
+        "= F.leaky_relu(self.conv32_64(image))"
+    ],
+    [
+        "plt.imshow(img) plt.axis('off')",
+        "#",
+        "Turn off"
+    ],
+    [
+        "std=[0.229, 0.224,",
+        "0.225])",
+        "# Normalize"
+    ],
+    [
+        "stride=2) #",
+        "Fully",
+        "connected layer"
+    ],
+    [
+        "shuffle=True, num_workers=16)",
+        "#",
+        "# #"
+    ],
+    [
+        "threshold=1.0) trainer",
+        "=",
+        "L.Trainer(max_epochs=200) #"
+    ],
+    [
+        "now (128,",
+        "25,",
+        "25) image"
+    ],
+    [
+        "output_size_of_pooling =",
+        "3",
+        "learning_rate ="
+    ],
+    [
+        "num_classes =",
+        "2",
+        "mean ="
+    ],
+    [
+        "accuracy from",
+        "the",
+        "confusion matrix"
+    ],
+    [
+        "# Set",
+        "up",
+        "and return"
+    ],
+    [
+        "= datasets.ImageFolder(root=filepath_train,",
+        "transform=self.transform)",
+        "train_loader ="
+    ],
+    [
+        "test_transform =",
+        "transforms.Compose([",
+        "transforms.Resize((128, 128)),"
+    ],
+    [
+        "to numpy",
+        "array",
+        "and flatten"
+    ],
+    [
+        "filepath_train =",
+        "\"data/train\"",
+        "filepath_test ="
+    ],
+    [
+        "(128, 25,",
+        "25)",
+        "image ="
+    ],
+    [
+        "label='All weights')",
+        "plt.hist(large_weights,",
+        "bins=50, color='red',"
+    ],
+    [
+        "to PyTorch",
+        "tensors",
+        "transforms.Normalize(mean=[0.485, 0.456,"
+    ],
+    [
+        "= self(images)",
+        "loss",
+        "= self.criterion(predictions,"
+    ],
+    [
+        "train_loader def",
+        "test_dataloader(self):",
+        "# Set"
+    ],
+    [
+        "if images_so_far",
+        "==",
+        "num_images: return"
+    ],
+    [
+        "PyTorch model",
+        "instance",
+        "plot_large_weights_distribution(model, threshold=1.0)"
+    ],
+    [
+        "0.225]) #",
+        "Normalize",
+        "images ])"
+    ],
+    [
+        "confusion matrix",
+        "per_class_accuracy",
+        "= confmat.diagonal()"
+    ],
+    [
+        "outputs =",
+        "model(images)",
+        "_, preds"
+    ],
+    [
+        "filepath_train =",
+        "\"data/test\"",
+        "test_dataset ="
+    ],
+    [
+        "from torchmetrics",
+        "import",
+        "ConfusionMatrix from"
+    ],
+    [
+        "# Find",
+        "large",
+        "weights large_weights"
+    ],
+    [
+        "def test_dataloader(self):",
+        "#",
+        "Set up"
+    ],
+    [
+        "num_images=6): model.eval()",
+        "#",
+        "Set the"
+    ],
+    [
+        "directory files",
+        "=",
+        "os.listdir(directory) #"
+    ],
+    [
+        "files jpg_files",
+        "=",
+        "[file for"
+    ],
+    [
+        "num_workers=16) #",
+        "#",
+        "# Assuming"
+    ],
+    [
+        "out_channels=32, kernel_size=3,",
+        "padding=1)",
+        "self.conv32_32 ="
+    ],
+    [
+        "= self.pool(image)",
+        "#",
+        "Output is"
+    ],
+    [
+        "transforms, datasets",
+        "from",
+        "torchvision.transforms import"
+    ],
+    [
+        "as L",
+        "import",
+        "torch import"
+    ],
+    [
+        "with torch.no_grad():",
+        "#",
+        "No need"
+    ],
+    [
+        "threshold above",
+        "which",
+        "weights are"
+    ],
+    [
+        "transform=test_transform) val_loader",
+        "=",
+        "DataLoader(val_dataset, batch_size=batch_size,"
+    ],
+    [
+        "= std",
+        "*",
+        "img +"
+    ],
+    [
+        "128)), #",
+        "Resize",
+        "images to"
+    ]
+]
